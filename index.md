@@ -1,10 +1,13 @@
 *Hello, world!*
+
 **Hello, world!**
 # Hello, world!
 ## Hello, world!
 > Hello, world!
+
 `Hello, world!`
-[Link](https://ucsd.edu/)
+
+[UCSD Website](https://ucsd.edu/)
 
 ![Image](https://upload.wikimedia.org/wikipedia/en/thumb/4/44/University_of_California%2C_San_Diego_seal.svg/1200px-University_of_California%2C_San_Diego_seal.svg.png)
 
