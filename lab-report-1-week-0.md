@@ -1,1 +1,0 @@
-![](https://file%2B.vscode-resource.vscode-cdn.net/c%3A/Users/vpabb/OneDrive/Pictures/R%20Pi/CSE15LWeek0Pic.png?version%3D1664257833556)
