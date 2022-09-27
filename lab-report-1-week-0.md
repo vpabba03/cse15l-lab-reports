@@ -1,1 +1,1 @@
-![Adding Images Instructions](C:\Users\vpabb\OneDrive\Documents\GitHub\cse15l-lab-reports\CSE15LWeek0Pic.png)
+![Adding Images Instructions](CSE15LWeek0Pic.png)
