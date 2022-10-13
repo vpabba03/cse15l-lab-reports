@@ -3,6 +3,8 @@
 
 - I implemented a web server that was able to add strings to a list, and returned all strings that contained a given substring to search for.
 
+- The following code is from the SearchEngine.java file:
+
 ```
 import java.io.IOException; 
 import java.net.URI; 
@@ -55,5 +57,24 @@ class SearchEngine{
         Server.start(port, new Handler());
     }
 }
-
 ```
+- If the URL path contains `add`, it will initiate the command to add a string value to an arraylist. 
+
+    - In this following image, I use the `add` command which takes the String value, `apple`, as an argument.
+
+    ![AddMethodDemoApple](SearchAddDemo.png)
+    
+    - In the next image, I use the `add` command twice with `pineapple` and `randomstring` as my arguments.
+
+    ![AddMethodDemoPineapple](SearchAddDemoPineapple.png)
+    ![AddMethodDemoRandom](SearchAddDemoRandom.png)
+
+- If the URL path contains `search`, it will search from the indicated substring through the list of added words, and then return the strings with the substring.
+
+    - In the following image, I use the `search` command with the substring argument, `apple`, and the output is shown to be `[apple, pineapple]`, which are both of the words that contain the substring.
+
+    ![SearchMethodDemo](SearchMethodDemo.png)
+
+## Part 2
+
+### Array
