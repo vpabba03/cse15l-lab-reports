@@ -94,6 +94,7 @@ class SearchEngine{
 - Bug Fix:
 
     - I switched the assignment of array values, so that the values at each index of `newArray` would be updated rather than at each index of `arr`.
+    
     ![ArrayBugFix](ArrayBugFix.png)
 
 - Explanation:
