@@ -77,4 +77,32 @@ class SearchEngine{
 
 ## Part 2
 
-### Array
+### Array `reversed` Method
+
+- Failure-inducing input:
+
+    - For the test, I decided on the input of `[1, 2, 3]`, and it should return a new array equal to `[3, 2, 1]`.
+
+    ![ArrayTestInput](InputArrayTest.png)
+
+- Symptom:
+
+    - When the test was run, the value at `newArray[0]` was `0`, instead of `3`.
+
+    ![ArrayTestOutput](ArrayTestOutput.png)
+
+- Bug:
+
+    - I switched the assignment of array values, so that the values at each index of `newArray` would be updated rather than at each index of `arr`.
+    ![ArrayBugFix](ArrayBugFix.png)
+
+- Explanation:
+
+    - Because `arr[i]` was being updated during each iteration of the for-loop, the values in `newArray` remained the same. 
+    - Because the values in `newArray` was not initialized with values, it had `0` at every index. 
+    - Because `newArray` was not updated, the value at `newArray[0]` was still `0`, not `3`.
+
+
+
+
+
