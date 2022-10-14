@@ -79,7 +79,7 @@ class SearchEngine{
 
 ### Array `reversed` Method
 
-- Failure-inducing input:
+- Failure-inducing Input:
 
     - For the test, I decided on the input of `[1, 2, 3]`, and it should return a new array equal to `[3, 2, 1]`.
 
@@ -91,7 +91,7 @@ class SearchEngine{
 
     ![ArrayTestOutput](ArrayTestOutput.png)
 
-- Bug:
+- Bug Fix:
 
     - I switched the assignment of array values, so that the values at each index of `newArray` would be updated rather than at each index of `arr`.
     ![ArrayBugFix](ArrayBugFix.png)
@@ -102,7 +102,30 @@ class SearchEngine{
     - Because the values in `newArray` was not initialized with values, it had `0` at every index. 
     - Because `newArray` was not updated, the value at `newArray[0]` was still `0`, not `3`.
 
+### List `filter` Method
 
+- Failure-inducing Input:
 
+    - For this test, I basically input a list of string phrases and words, `["hello", "my name", "Vishwak"]`, and a implementation of the `StringChecker` interface called `moreThanOneWord`, which returned true if the string contained a single word.
 
+    - The output I expected from the test was `["hello", "Vishwak"]`.
+
+    ![ListTest](InputListTest.png)
+
+- Symptom:
+
+    - When the test was run, the value at `result.get(0)` was `"Vishwak"`, instead of `"hello"`.
+
+    ![ListTestOutput](ListTestOutput.png)
+
+- Bug Fix:
+
+    - In the if-statement, I changed the `.add` function to not contain an index to add the new value at.
+
+    ![ListBugFix](ListBugFix.png)
+
+- Explanation:
+
+    - Because the `.add` function contains an index when called in the method, everytime a new value is passed through the filter, the new value is added at the index. 
+    - In this method, the index is set at `0`, so every valid string will be added to the front, and so the strings values would be reversed in the new list.
 
