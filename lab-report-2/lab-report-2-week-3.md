@@ -94,7 +94,7 @@ class SearchEngine{
 - Bug Fix:
 
     - I switched the assignment of array values, so that the values at each index of `newArray` would be updated rather than at each index of `arr`.
-    
+
     ![ArrayBugFix](ArrayBugFix.png)
 
 - Explanation:
@@ -121,12 +121,12 @@ class SearchEngine{
 
 - Bug Fix:
 
-    - In the if-statement, I changed the `.add` function to not contain an index to add the new value at.
+    - In the if-statement, I changed the `.add` function to not contain an index argument to add the new value at.
 
     ![ListBugFix](ListBugFix.png)
 
 - Explanation:
 
     - Because the `.add` function contains an index when called in the method, everytime a new value is passed through the filter, the new value is added at the index. 
-    - In this method, the index is set at `0`, so every valid string will be added to the front, and so the strings values would be reversed in the new list.
+    - In this method, the index is set at `0`, so every valid string will be added to the front, and so the strings values would be in reverse order in the new list.
 
