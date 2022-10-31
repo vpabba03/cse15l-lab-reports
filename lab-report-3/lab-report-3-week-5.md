@@ -115,7 +115,8 @@ journal.pbio.0030137.txt:0
 
 ### Example 2
 ```
-[cs15lfa22if@ieng6-202]:technical:229$ cd 911report                                                                     [cs15lfa22if@ieng6-202]:911report:230$ grep -c "World Trade Center" chapter-9.txt                                       
+[cs15lfa22if@ieng6-202]:technical:229$ cd 911report
+[cs15lfa22if@ieng6-202]:911report:230$ grep -c "World Trade Center" chapter-9.txt                                       
 16                
 ```
 - In this example, I used the `grep -c` command to determine how many times the World Trade Center is mentioned in the text file. This could be useful when trying to determine the how many times a word is used in a text.
