@@ -6,7 +6,7 @@
  
     `In TestDocSearch.java, copy the test called testSearchCount, rename the new test to testSearchCount2 and change the query string being tested to tax rather than taxation.`
 
-- The steps we took (29 keystrokes):
+- The steps we took (27 keystrokes):
 
     1. `/@ <Enter> nn`
 
@@ -36,6 +36,9 @@
 
         ![DeleteLetters](DeleteLast5.png)
 
-    11. `:w`
+    11. `:w <Enter>`
 
         ![SaveFile](SaveFile.png)
+
+## Part 2
+
